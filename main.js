@@ -7,7 +7,7 @@ const THEME_KEY = 'theme';
 function applyTheme(theme) {
     document.body.setAttribute('data-theme', theme);
     const isDark = theme === 'dark';
-    themeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    themeToggle.textContent = isDark ? '라이트 모드' : '다크 모드';
     themeToggle.setAttribute('aria-pressed', String(isDark));
 }
 
