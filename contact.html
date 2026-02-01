@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제휴 문의</title>
+    <meta name="description" content="제휴 문의 폼 페이지.">
+    <meta property="og:title" content="제휴 문의">
+    <meta property="og:description" content="제휴 제안을 남겨주세요">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akzins44.github.io/First_Test/contact.html">
+    <meta property="og:image" content="https://akzins44.github.io/First_Test/assets/og-image.svg">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>제휴 문의</h1>
+            <p class="subtitle">협업 및 제휴 제안은 아래 폼으로 보내주세요</p>
+        </div>
+        <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="./">홈</a>
+            <a href="odds.html" target="_blank" rel="noopener">확률</a>
+            <a href="faq.html" target="_blank" rel="noopener">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h2>문의 폼</h2>
+            <p class="section-desc">확인 후 빠르게 회신드리겠습니다.</p>
+            <form action="https://formspree.io/f/mrelgvdp" method="POST">
+                <input type="hidden" name="_next" value="https://akzins44.github.io/First_Test/thank-you.html">
+                <label for="company">회사명</label>
+                <input id="company" name="company" type="text" placeholder="회사명을 입력해 주세요" required>
+
+                <label for="name">담당자명</label>
+                <input id="name" name="name" type="text" placeholder="담당자 이름을 입력해 주세요" required>
+
+                <label for="email">이메일</label>
+                <input id="email" name="email" type="email" placeholder="example@company.com" required>
+
+                <label for="message">문의 내용</label>
+                <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 입력해 주세요" required></textarea>
+
+                <button type="submit">문의 보내기</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Lotto Number Generator</p>
+        <div class="footer-links">
+            <a href="./">홈</a>
+            <a href="about.html">사이트 소개</a>
+            <a href="privacy.html">개인정보처리방침</a>
+            <a href="terms.html">이용약관</a>
+        </div>
+    </footer>
+</body>
+</html>

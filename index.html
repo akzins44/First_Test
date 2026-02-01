@@ -29,10 +29,10 @@
         <nav class="site-nav" aria-label="주요 메뉴">
             <a href="#generator">번호 생성</a>
             <a href="#how">사용 방법</a>
-            <a href="#odds">확률</a>
             <a href="#glossary">용어집</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">제휴 문의</a>
+            <a href="odds.html" target="_blank" rel="noopener">확률</a>
+            <a href="faq.html" target="_blank" rel="noopener">FAQ</a>
+            <a href="contact.html" target="_blank" rel="noopener">제휴 문의</a>
         </nav>
         <button id="theme-toggle" aria-pressed="false">다크 모드</button>
     </header>
@@ -68,74 +68,10 @@
             </p>
         </section>
 
-        <section id="odds" class="panel">
-            <h2>확률 정보</h2>
-            <p class="section-desc">
-                로또는 1~45 중 6개를 맞히는 방식으로, 모든 조합은 동일한 확률을 가집니다.
-                번호 생성기는 통계적 편향 없이 번호를 제공하는 참고 도구입니다.
-            </p>
-            <ul class="bullet-list">
-                <li>중복 없는 6개 번호만 생성합니다.</li>
-                <li>출력 순서는 보기 편하도록 정렬됩니다.</li>
-                <li>자주 등장하는 패턴을 의도적으로 만들지 않습니다.</li>
-            </ul>
-        </section>
-
-        <section id="odds-detail" class="panel">
-            <h2>당첨 확률(요약)</h2>
-            <p class="section-desc">확률은 조합 수에 기반하며, 회차나 번호 구성에 따라 달라지지 않습니다.</p>
-            <div class="table-wrap">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th>등수</th>
-                            <th>조건</th>
-                            <th>대략 확률</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1등</td>
-                            <td>6개 일치</td>
-                            <td>1 / 8,145,060</td>
-                        </tr>
-                        <tr>
-                            <td>2등</td>
-                            <td>5개 + 보너스</td>
-                            <td>1 / 1,357,510</td>
-                        </tr>
-                        <tr>
-                            <td>3등</td>
-                            <td>5개 일치</td>
-                            <td>1 / 35,724</td>
-                        </tr>
-                        <tr>
-                            <td>4등</td>
-                            <td>4개 일치</td>
-                            <td>1 / 733</td>
-                        </tr>
-                        <tr>
-                            <td>5등</td>
-                            <td>3개 일치</td>
-                            <td>1 / 45</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="note">※ 확률은 일반적으로 알려진 조합 계산 기준의 근사값입니다.</p>
-        </section>
-
-        <section id="patterns" class="panel">
-            <h2>번호 패턴 이해</h2>
-            <p class="section-desc">
-                로또 번호는 무작위이기 때문에 특정 패턴이 더 유리하다고 단정할 수 없습니다.
-                다만 사람들이 흔히 피하는 조합을 이해하면 당첨 시 상금 분배에 영향을 줄 수 있습니다.
-            </p>
-            <ul class="bullet-list">
-                <li>연속수만으로 구성된 조합은 흔하지 않게 느껴집니다.</li>
-                <li>홀짝 비율을 3:3 또는 2:4 등으로 섞는 경우가 많습니다.</li>
-                <li>고·저 번호(1~22 / 23~45)를 균형 있게 섞는 전략이 자주 언급됩니다.</li>
-            </ul>
+        <section id="odds-cta" class="panel">
+            <h2>확률/패턴 정보</h2>
+            <p class="section-desc">확률 요약과 번호 패턴 가이드는 별도 페이지에서 확인할 수 있습니다.</p>
+            <a class="pill-link" href="odds.html" target="_blank" rel="noopener">확률 페이지 열기</a>
         </section>
 
         <section id="tips" class="panel">
@@ -180,45 +116,16 @@
             </div>
         </section>
 
-        <section id="contact" class="panel">
-            <h2>제휴 문의</h2>
-            <p class="section-desc">협업 및 제휴 제안은 아래 폼으로 보내주세요. 확인 후 빠르게 회신드리겠습니다.</p>
-            <form action="https://formspree.io/f/mrelgvdp" method="POST">
-                <input type="hidden" name="_next" value="https://akzins44.github.io/First_Test/thank-you.html">
-                <label for="company">회사명</label>
-                <input id="company" name="company" type="text" placeholder="회사명을 입력해 주세요" required>
-
-                <label for="name">담당자명</label>
-                <input id="name" name="name" type="text" placeholder="담당자 이름을 입력해 주세요" required>
-
-                <label for="email">이메일</label>
-                <input id="email" name="email" type="email" placeholder="example@company.com" required>
-
-                <label for="message">문의 내용</label>
-                <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 입력해 주세요" required></textarea>
-
-                <button type="submit">문의 보내기</button>
-            </form>
+        <section id="faq-cta" class="panel">
+            <h2>자주 묻는 질문</h2>
+            <p class="section-desc">자주 묻는 질문은 별도 페이지에서 확인할 수 있습니다.</p>
+            <a class="pill-link" href="faq.html" target="_blank" rel="noopener">FAQ 페이지 열기</a>
         </section>
 
-        <section id="faq" class="panel">
-            <h2>자주 묻는 질문</h2>
-            <div class="qa">
-                <h3>생성된 번호가 당첨을 보장하나요?</h3>
-                <p>아니요. 모든 조합은 동일한 확률을 가지며, 번호 생성기는 참고용입니다.</p>
-            </div>
-            <div class="qa">
-                <h3>번호는 어떻게 선택되나요?</h3>
-                <p>1~45 범위에서 중복 없이 난수를 선택한 뒤 오름차순으로 정렬합니다.</p>
-            </div>
-            <div class="qa">
-                <h3>번호가 반복되나요?</h3>
-                <p>랜덤 생성 특성상 과거에 나온 번호가 다시 나올 수 있습니다.</p>
-            </div>
-            <div class="qa">
-                <h3>모바일에서도 사용할 수 있나요?</h3>
-                <p>네. 반응형으로 설계되어 모바일/데스크톱 모두에서 사용 가능합니다.</p>
-            </div>
+        <section id="contact-cta" class="panel">
+            <h2>제휴 문의</h2>
+            <p class="section-desc">제휴 문의는 별도 페이지에서 접수합니다.</p>
+            <a class="pill-link" href="contact.html" target="_blank" rel="noopener">제휴 문의 페이지 열기</a>
         </section>
 
         <section id="comments" class="panel">
