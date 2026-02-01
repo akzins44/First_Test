@@ -135,3 +135,20 @@ h1 {
     color: var(--btn-text);
     cursor: pointer;
 }
+
+#comments {
+    width: min(800px, 92vw);
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 16px;
+    background: var(--card);
+}
+
+#comments h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+
+#disqus_thread {
+    width: 100%;
+}
