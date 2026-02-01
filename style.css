@@ -72,6 +72,20 @@ h1 {
     color: var(--btn-text);
 }
 
+.thanks-text {
+    margin: 12px 0 20px;
+    font-size: 16px;
+}
+
+.back-link {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--btn-border);
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    text-decoration: none;
+}
+
 #contact {
     width: min(560px, 92vw);
     margin-top: 28px;
