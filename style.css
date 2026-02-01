@@ -90,6 +90,36 @@ main {
     line-height: 1.6;
 }
 
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.info-table th,
+.info-table td {
+    padding: 10px 12px;
+    border: 1px solid var(--btn-border);
+    text-align: left;
+}
+
+.info-table th {
+    background: var(--card);
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
 .qa h3 {
     margin: 0 0 6px;
     font-size: 16px;
