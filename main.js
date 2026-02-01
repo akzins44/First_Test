@@ -1,5 +1,22 @@
 const numbersContainer = document.getElementById('numbers-container');
 const generateBtn = document.getElementById('generate-btn');
+const themeToggle = document.getElementById('theme-toggle');
+
+const THEME_KEY = 'theme';
+
+function applyTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    const isDark = theme === 'dark';
+    themeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+}
+
+function initTheme() {
+    const savedTheme = localStorage.getItem(THEME_KEY);
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    applyTheme(theme);
+}
 
 function generateNumbers() {
     const numbers = new Set();
@@ -34,3 +51,12 @@ generateBtn.addEventListener('click', () => {
         numbersContainer.appendChild(numberDiv);
     }
 });
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.body.getAttribute('data-theme') || 'light';
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(THEME_KEY, nextTheme);
+    applyTheme(nextTheme);
+});
+
+initTheme();
