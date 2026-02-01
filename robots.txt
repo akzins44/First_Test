@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akzins44.github.io/First_Test/sitemap.xml

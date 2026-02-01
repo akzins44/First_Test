@@ -1,60 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>로또 번호 생성기</title>
+    <meta name="description" content="로또 번호 생성기와 로또 확률, 번호 구성 방식, 이용 가이드 및 책임 있는 이용 안내를 제공합니다.">
     <meta name="google-adsense-account" content="ca-pub-3627827634705439">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3627827634705439"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>로또 번호 생성기</h1>
-    <button id="theme-toggle" aria-pressed="false">다크 모드</button>
-    <div id="numbers-container"></div>
-    <button id="generate-btn">번호 생성</button>
+    <header class="site-header">
+        <div class="brand">
+            <h1>로또 번호 생성기</h1>
+            <p class="subtitle">랜덤 번호 생성, 확률 정보, 책임 있는 이용 가이드</p>
+        </div>
+        <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="#generator">번호 생성</a>
+            <a href="#how">사용 방법</a>
+            <a href="#odds">확률</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">제휴 문의</a>
+        </nav>
+        <button id="theme-toggle" aria-pressed="false">다크 모드</button>
+    </header>
 
-    <section id="contact">
-        <h2>제휴 문의</h2>
-        <form action="https://formspree.io/f/mrelgvdp" method="POST">
-            <input type="hidden" name="_next" value="https://akzins44.github.io/First_Test/thank-you.html">
-            <label for="company">회사명</label>
-            <input id="company" name="company" type="text" placeholder="회사명을 입력해 주세요" required>
+    <main>
+        <section id="generator" class="panel">
+            <h2>번호 생성</h2>
+            <p class="section-desc">버튼을 누르면 1~45 범위에서 중복 없는 6개 번호를 무작위로 생성합니다.</p>
+            <div id="numbers-container"></div>
+            <button id="generate-btn">번호 생성</button>
+        </section>
 
-            <label for="name">담당자명</label>
-            <input id="name" name="name" type="text" placeholder="담당자 이름을 입력해 주세요" required>
+        <section id="how" class="panel">
+            <h2>사용 방법</h2>
+            <ol class="bullet-list">
+                <li>아래 “번호 생성” 버튼을 눌러 추천 번호를 만듭니다.</li>
+                <li>원하는 만큼 반복해서 생성해 비교해 보세요.</li>
+                <li>생성된 번호는 참고용이며, 당첨을 보장하지 않습니다.</li>
+            </ol>
+        </section>
 
-            <label for="email">이메일</label>
-            <input id="email" name="email" type="email" placeholder="example@company.com" required>
+        <section id="method" class="panel">
+            <h2>번호 생성 원리</h2>
+            <p class="section-desc">
+                번호는 난수 생성으로 선택되며, 중복을 방지한 후 오름차순으로 정렬해 표시합니다.
+                특정 번호가 더 자주 나오도록 편향을 주지 않습니다.
+            </p>
+        </section>
 
-            <label for="message">문의 내용</label>
-            <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 입력해 주세요" required></textarea>
+        <section id="odds" class="panel">
+            <h2>확률 정보</h2>
+            <p class="section-desc">
+                로또는 1~45 중 6개를 맞히는 방식으로, 모든 조합은 동일한 확률을 가집니다.
+                번호 생성기는 통계적 편향 없이 번호를 제공하는 참고 도구입니다.
+            </p>
+            <ul class="bullet-list">
+                <li>중복 없는 6개 번호만 생성합니다.</li>
+                <li>출력 순서는 보기 편하도록 정렬됩니다.</li>
+                <li>자주 등장하는 패턴을 의도적으로 만들지 않습니다.</li>
+            </ul>
+        </section>
 
-            <button type="submit">문의 보내기</button>
-        </form>
-    </section>
+        <section id="responsible" class="panel">
+            <h2>책임 있는 이용 안내</h2>
+            <p class="section-desc">
+                로또는 오락 목적의 게임이며, 무리한 지출은 피해주세요. 본 사이트는 구매를 권유하지 않으며
+                결과에 대한 보장이나 책임을 지지 않습니다.
+            </p>
+        </section>
 
-    <section id="comments">
-        <h2>댓글</h2>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            var disqus_config = function () {
-                this.page.url = window.location.href;
-                this.page.identifier = window.location.pathname || '/';
-            };
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://first-test-9.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>댓글을 보려면 자바스크립트를 활성화해 주세요. <a href="https://disqus.com/?ref_noscript">Disqus에서 제공됩니다.</a></noscript>
-    </section>
+        <section id="contact" class="panel">
+            <h2>제휴 문의</h2>
+            <p class="section-desc">협업 및 제휴 제안은 아래 폼으로 보내주세요. 확인 후 빠르게 회신드리겠습니다.</p>
+            <form action="https://formspree.io/f/mrelgvdp" method="POST">
+                <input type="hidden" name="_next" value="https://akzins44.github.io/First_Test/thank-you.html">
+                <label for="company">회사명</label>
+                <input id="company" name="company" type="text" placeholder="회사명을 입력해 주세요" required>
+
+                <label for="name">담당자명</label>
+                <input id="name" name="name" type="text" placeholder="담당자 이름을 입력해 주세요" required>
+
+                <label for="email">이메일</label>
+                <input id="email" name="email" type="email" placeholder="example@company.com" required>
+
+                <label for="message">문의 내용</label>
+                <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 입력해 주세요" required></textarea>
+
+                <button type="submit">문의 보내기</button>
+            </form>
+        </section>
+
+        <section id="faq" class="panel">
+            <h2>자주 묻는 질문</h2>
+            <div class="qa">
+                <h3>생성된 번호가 당첨을 보장하나요?</h3>
+                <p>아니요. 모든 조합은 동일한 확률을 가지며, 번호 생성기는 참고용입니다.</p>
+            </div>
+            <div class="qa">
+                <h3>번호는 어떻게 선택되나요?</h3>
+                <p>1~45 범위에서 중복 없이 난수를 선택한 뒤 오름차순으로 정렬합니다.</p>
+            </div>
+            <div class="qa">
+                <h3>모바일에서도 사용할 수 있나요?</h3>
+                <p>네. 반응형으로 설계되어 모바일/데스크톱 모두에서 사용 가능합니다.</p>
+            </div>
+        </section>
+
+        <section id="comments" class="panel">
+            <h2>댓글</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = window.location.pathname || '/';
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://first-test-9.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화해 주세요. <a href="https://disqus.com/?ref_noscript">Disqus에서 제공됩니다.</a></noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Lotto Number Generator</p>
+        <div class="footer-links">
+            <a href="about.html">사이트 소개</a>
+            <a href="privacy.html">개인정보처리방침</a>
+            <a href="terms.html">이용약관</a>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
