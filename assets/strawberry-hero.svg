@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">딸기 홍보 대표 이미지</title>
+  <desc id="desc">신선한 딸기와 잎사귀를 장식적으로 표현한 대표 비주얼</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6f3"/>
+      <stop offset="1" stop-color="#ffe5ea"/>
+    </linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6b7c"/>
+      <stop offset="1" stop-color="#d62245"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <circle cx="160" cy="150" r="95" fill="#ffdfe3"/>
+  <circle cx="1030" cy="120" r="120" fill="#ffe8d9"/>
+  <circle cx="1000" cy="560" r="140" fill="#ffd7df"/>
+  <ellipse cx="600" cy="580" rx="310" ry="70" fill="#efcfd3"/>
+  <g transform="translate(330 140)">
+    <path d="M215 0c39 0 80 22 111 59-25-7-48-7-75 0 13-22 28-39 46-52-34 0-66 18-89 51l-15-1-15 1C155 25 123 7 89 7c18 13 33 30 46 52-27-7-50-7-75 0C91 22 132 0 171 0c17 0 31 6 44 18C184 6 198 0 215 0Z" fill="#4f9c52"/>
+    <path d="M201 74c62 0 169 66 198 184 24 99-14 222-76 300-33 41-75 62-108 62s-75-21-108-62c-62-78-100-201-76-300C60 140 167 74 229 74c-11 17-18 34-22 53-2 11-3 22-3 33-1-11-2-22-5-33-4-19-11-36-21-53h23Z" fill="url(#berry)"/>
+    <g fill="#ffe08d">
+      <circle cx="125" cy="197" r="8"/><circle cx="218" cy="175" r="8"/><circle cx="300" cy="201" r="8"/>
+      <circle cx="103" cy="287" r="8"/><circle cx="198" cy="264" r="8"/><circle cx="303" cy="290" r="8"/>
+      <circle cx="141" cy="383" r="8"/><circle cx="257" cy="381" r="8"/><circle cx="208" cy="484" r="8"/>
+    </g>
+  </g>
+  <text x="92" y="560" fill="#9f2741" font-size="64" font-family="Arial, sans-serif" font-weight="700">Fresh Strawberry Story</text>
+  <text x="96" y="618" fill="#6d3f4a" font-size="28" font-family="Arial, sans-serif">품종의 개성과 신선한 매력을 전하는 딸기 가이드</text>
+</svg>

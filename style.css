@@ -218,6 +218,16 @@ main {
     font-size: 24px;
 }
 
+.variety-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 14px;
+    border-radius: 14px;
+    background: #fff8f8;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .variety-tone {
     margin: 0 0 10px;
     font-size: 14px;
@@ -230,7 +240,7 @@ main {
     line-height: 1.6;
 }
 
-#numbers-container {
+#recommendation-container {
     display: flex;
     margin-bottom: 20px;
     gap: 10px;
