@@ -67,6 +67,19 @@ main {
     margin-top: 20px;
 }
 
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.breadcrumb a {
+    color: var(--text);
+    text-decoration: none;
+}
+
 .panel {
     padding: 20px;
     border-radius: 16px;
@@ -185,24 +198,42 @@ main {
     background: #ffffff;
 }
 
+.result-placeholder {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.variety-card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid var(--btn-border);
+    border-radius: 16px;
+    background: var(--bg);
+}
+
+.variety-card h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.variety-tone {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.variety-desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 #numbers-container {
     display: flex;
     margin-bottom: 20px;
     gap: 10px;
-}
-
-.number {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--card);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--text);
 }
 
 #theme-toggle {
@@ -279,6 +310,10 @@ main {
     background: var(--btn-bg);
     color: var(--btn-text);
     text-decoration: none;
+}
+
+.thanks-page {
+    width: min(900px, 92vw);
 }
 
 .site-footer {
